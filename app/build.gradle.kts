@@ -52,5 +52,9 @@ dependencies {
     // (arm64 para teléfonos, x86_64 para el emulador); el modelo NO viene aquí.
     implementation(libs.litertlm.android)
 
+    // Pruebas locales (src/test): corren en la JVM de tu computadora, sin emulador ni modelo.
+    testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
+
     debugImplementation(libs.androidx.ui.tooling)
 }
